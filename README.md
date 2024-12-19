@@ -174,5 +174,8 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 - **DHT sensor library for ESPx**
 
 5. Cambiamos usuario y contraseña en el código que pusimos:
-!][()
+!][(https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20135514.png?raw=true)
+
+6. En el buscador colocamos **www.emqx.com** y copiamos el broker que aparece:
+![]()
 
