@@ -195,5 +195,8 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20141631.png?raw=true)
 
 12. Colocamos el bloque **json** y lo cofiguramos seleccionando la siguiente opción:
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20141929.png?raw=true)
+
+13. Colocamos el bloque **debug** que nos dira todo lo que hace y lo conectamos a los bloques anteriores:
 ![]()
 
