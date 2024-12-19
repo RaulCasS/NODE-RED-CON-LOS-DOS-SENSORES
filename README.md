@@ -203,4 +203,8 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 14. Después de conectar estos 3 bloques le damos click en **deploy** y en la simulación le damos **play**, y nos mostrara los datos tanto en la **ESP** como en **node-red**:
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20143728.png?raw=true)
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20143852.png?raw=true)
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20143829.png?raw=true)
+
+15. Agregamos 2 bloques de funciones, en uno configuramos con el código de temperatura y en el otro con el código de humedad, y los conectamos al bloque **json**:
+![]()
 ![]()
