@@ -166,5 +166,13 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://raw.githubusercontent.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/79c8785182c819f0f1be52018963d8dfa88fb32c/Captura%20de%20pantalla%202024-12-19%20134556.png)
 
 3. En el explorador colocamos **localhost:1880** para abrir **node-red**:
-![]()
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20134844.png?raw=true)
+
+4. Agregamos las siguientes 3 librerias:
+- **ArduinoJson**
+- **PubSubClient**
+- **DHT sensor library for ESPx**
+
+5. Cambiamos usuario y contraseña en el código que pusimos:
+!][()
 
