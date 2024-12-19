@@ -163,5 +163,8 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ```
 
 2. Abrimos **CMD** y enseguida colocamos **node-red**, seguido de **enter**:
+![](https://raw.githubusercontent.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/79c8785182c819f0f1be52018963d8dfa88fb32c/Captura%20de%20pantalla%202024-12-19%20134556.png)
+
+3. En el explorador colocamos **localhost:1880** para abrir **node-red**:
 ![]()
 
