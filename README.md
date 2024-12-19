@@ -205,6 +205,9 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20143852.png?raw=true)
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20143829.png?raw=true)
 
-15. Agregamos 2 bloques de funciones, en uno configuramos con el código de temperatura y en el otro con el código de humedad, y los conectamos al bloque **json**:
+15. Agregamos 3 bloques de funciones, en uno configuramos con el código de temperatura, en el otro con el código de humedad y el tercero con el códigode distancia,  los conectamos al bloque **json** por separado:
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-18%20162107.png?raw=true)
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-18%20162121.png?raw=true)
 ![]()
+
+17. 
