@@ -214,6 +214,9 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20145137.png?raw=true)
 
 18. Nos dirigimos al apartado de **Dashboard** en **node-red** y damos click en **+tab**, para agregar el grupo **MODULO V** y dos subgrupos **INDICADORES V** y **GRAFICAS V**:
-![]()
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20145534.png?raw=true)
 
+19.  Modificamos las propiedades de los **indicadores** y **gráficas**:
+![]()
+![]()
 
