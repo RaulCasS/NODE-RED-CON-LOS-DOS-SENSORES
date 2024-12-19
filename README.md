@@ -183,5 +183,8 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20140327.png?raw=true)
 
 8. Copiamos el **adress** que aparece en el paso anterior y lo pegamos en el código:
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20140610.png?raw=true)
+
+9. Conectamos los componentes en **WOKWI**:
 ![]()
 
