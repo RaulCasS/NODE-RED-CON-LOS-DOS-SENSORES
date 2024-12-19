@@ -1,5 +1,5 @@
 # NODE-RED-CON-LOS-DOS-SENSORES
-PROGRAMACION CON UN SENSOR DE TEMPERATURA Y HUMEDAD, Y UN SENSOR ULTRASONICO, ATRAVES DE UN SIMULADOR (WOKWI) Y UNSERVIDOR (NODE-RED).
+PROGRAMACION CON UN SENSOR DE TEMPERATURA Y HUMEDAD, Y UN SENSOR ULTRASONICO, ATRAVES DE UN SIMULADOR (WOKWI) Y UN SERVIDOR (NODE-RED).
 ## INSTRUCCIONES
 1. Abrimos **WOKWI** y colocamos la siguiente programación:
 
@@ -163,64 +163,89 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ```
 
 2. Abrimos **CMD** y enseguida colocamos **node-red**, seguido de **enter**:
+   
 ![](https://raw.githubusercontent.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/79c8785182c819f0f1be52018963d8dfa88fb32c/Captura%20de%20pantalla%202024-12-19%20134556.png)
 
 3. En el explorador colocamos **localhost:1880** para abrir **node-red**:
+   
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20134844.png?raw=true)
 
-4. Agregamos las siguientes 3 librerias:
+4. Agregamos las siguientes 3 librerias en **wokwi**:
 - **ArduinoJson**
 - **PubSubClient**
 - **DHT sensor library for ESPx**
 
 5. Cambiamos usuario y contraseña en el código que pusimos:
-!][(https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20135514.png?raw=true)
+   
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20135514.png?raw=true)
 
 6. En el buscador colocamos **www.emqx.com** y copiamos el broker que aparece:
+   
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-18%20154658.png?raw=true)
 
 7. Abrimos **CDM** y escribimos **nslookup** y pegamos el broker copiado en el paso anterior, enseguida damos enter:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20140327.png?raw=true)
 
-8. Copiamos el **adress** que aparece en el paso anterior y lo pegamos en el código:
+8. Copiamos el **address** que aparece en el paso anterior y lo pegamos en el código:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20140610.png?raw=true)
 
 9. Conectamos los componentes en **WOKWI**:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20140902.png?raw=true)
 
 10. En el código agregmos otro dato a mostrar en la simulación, en este caso sería **nuestros nombre** y el **topico**:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20141156.png?raw=true)
 
 11. Nos dirigimos a **NODE-RED** que abrimos anteriormente, agregaremos el bloque **mqtt in** y lo configuramos, tanto con el **topico** como con el **mqtt server** copiado anteriormente:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20141631.png?raw=true)
 
 12. Colocamos el bloque **json** y lo cofiguramos seleccionando la siguiente opción:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20141929.png?raw=true)
 
 13. Colocamos el bloque **debug** que nos dira todo lo que hace y lo conectamos a los bloques anteriores:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20142312.png?raw=true)
 
 14. Después de conectar estos 3 bloques le damos click en **deploy** y en la simulación le damos **play**, y nos mostrara los datos tanto en la **ESP** como en **node-red**:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20143728.png?raw=true)
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20143852.png?raw=true)
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20143829.png?raw=true)
 
-15. Agregamos 3 bloques de funciones, en uno configuramos con el código de temperatura, en el otro con el código de humedad y el tercero con el códigode distancia,  los conectamos al bloque **json** por separado:
+15. Agregamos 3 bloques de funciones, en uno configuramos con el código de **temperatura**, en el otro con el código de **humedad** y el tercero con el códigode **distancia**,  los conectamos al bloque **json** por separado:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-18%20162107.png?raw=true)
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-18%20162121.png?raw=true)
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20144704.png?raw=true)
 
-17. Agregamos un bloque **chart** (gráfica) y un bloque **gauge** (indicador) para cada uno de los bloques conectados en el punto No. 15
+16. Agregamos un bloque **chart** (gráfica) y un bloque **gauge** (indicador) para cada uno de los bloques conectados en el punto anterior:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20145137.png?raw=true)
 
-18. Nos dirigimos al apartado de **Dashboard** en **node-red** y damos click en **+tab**, para agregar el grupo **MODULO V** y dos subgrupos **INDICADORES V** y **GRAFICAS V**:
+17. Nos dirigimos al apartado de **Dashboard** en **node-red** y damos click en **+tab**, para agregar el grupo **MODULO V** y dos subgrupos **INDICADORES V** y **GRAFICAS V**:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20145534.png?raw=true)
 
-19.  Modificamos las propiedades de los **indicadores** y **gráficas**:
+18.  Modificamos las propiedades de los **indicadores** y **gráficas**:
+    
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20145921.png?raw=true)
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20145936.png?raw=true)
 
-20. Corremos la simulación y mostramos las gráficas en **node-red**:
+19. Corremos la simulación y mostramos las gráficas en **node-red**:
+
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20150346.png?raw=true)
-![]()
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20150314.png?raw=true)
+
+### CRÉDITOS
+
+Desarrollador por el Ing. Raúl Castañeda Sotelo
+
+https://github.com/RaulCasS (GitHub)
+
+
 
