@@ -198,5 +198,9 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20141929.png?raw=true)
 
 13. Colocamos el bloque **debug** que nos dira todo lo que hace y lo conectamos a los bloques anteriores:
-![]()
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20142312.png?raw=true)
 
+14. Después de conectar estos 3 bloques le damos click en **deploy** y en la simulación le damos **play**, y nos mostrara los datos tanto en la **ESP** como en **node-red**:
+![]()
+![]()
+![]()
