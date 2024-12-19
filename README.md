@@ -177,5 +177,8 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 !][(https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20135514.png?raw=true)
 
 6. En el buscador colocamos **www.emqx.com** y copiamos el broker que aparece:
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-18%20154658.png?raw=true)
+
+7. Abrimos **CDM** y escribimos **nslookup** y pegamos el broker copiado en el paso anterior:
 ![]()
 
