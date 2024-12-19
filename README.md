@@ -211,4 +211,9 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20144704.png?raw=true)
 
 17. Agregamos un bloque **chart** (gráfica) y un bloque **gauge** (indicador) para cada uno de los bloques conectados en el punto No. 15
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20145137.png?raw=true)
+
+18. Nos dirigimos al apartado de **Dashboard** en **node-red** y damos click en **+tab**, para agregar el grupo **MODULO V** y dos subgrupos **INDICADORES V** y **GRAFICAS V**:
 ![]()
+
+
