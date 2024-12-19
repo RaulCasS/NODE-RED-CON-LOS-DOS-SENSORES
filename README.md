@@ -191,5 +191,9 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 10. En el código agregmos otro dato a mostrar en la simulación, en este caso sería **nuestros nombre** y el **topico**:
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20141156.png?raw=true)
 
-11. Nos dirigimos a **NODE-RED** que abrimos anteriormente, agregaremos el bloque **mqtt in** y lo configuramos, tanto con el **topico** como con el **mqtt server** copiado anteriormente
+11. Nos dirigimos a **NODE-RED** que abrimos anteriormente, agregaremos el bloque **mqtt in** y lo configuramos, tanto con el **topico** como con el **mqtt server** copiado anteriormente:
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20141631.png?raw=true)
+
+12. Colocamos el bloque **json** y lo cofiguramos seleccionando la siguiente opción:
+![]()
 
