@@ -218,5 +218,9 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
 19.  Modificamos las propiedades de los **indicadores** y **gráficas**:
 ![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20145921.png?raw=true)
+![](https://github.com/RaulCasS/NODE-RED-CON-LOS-DOS-SENSORES/blob/main/Captura%20de%20pantalla%202024-12-19%20145936.png?raw=true)
+
+20. Corremos la simulación y mostramos las gráficas en **node-red**:
+![]()
 ![]()
 
